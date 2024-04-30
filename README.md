@@ -1,6 +1,7 @@
 # it-matchingapp
 
 ## demo: http://178.154.201.200:4000/register
+check that you are using http instead of https
 
 usage:
 
