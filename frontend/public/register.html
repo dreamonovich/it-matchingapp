@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="custom-container">
-      <form class="custom-form was-validated" novalidate>
+      <form class="custom-form" onsubmit="return false">
         <div class="form-floating mb-3">
           <input
             type="text"
@@ -80,7 +80,7 @@
           <label for="bio">О себе</label>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-between">
-          <button type="button" class="btn btn-success" id="registerBtn">
+          <button type="submit" class="btn btn-success" id="registerBtn">
             Зарегистрироваться
           </button>
           <a type="button" class="btn btn-link" href="/login"
