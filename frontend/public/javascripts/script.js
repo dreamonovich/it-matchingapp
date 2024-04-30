@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let isDragging = false;
   let startPosX = 0;
+  let startPosY = 0;
 
   let startTimestamp;
   let startX;
@@ -180,8 +181,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function startDrag(event) {
     isDragging = true;
     startPosX = event.clientX || event.touches[0].clientX;
+    startPosY = event.clientY || event.touches[0].clientY;
     startTimestamp = Date.now();
     startX = startPosX;
+    startY = startPosY;
     profileCurrent.style.transition = "none";
   }
 
@@ -229,9 +232,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function drag(event) {
     if (!isDragging) return;
     const currentPosX = event.clientX || event.touches[0].clientX;
+    const currentPosY = event.clientY || event.touches[0].clientY;
+
     const deltaX = currentPosX - startPosX;
+    const deltaY = currentPosY - startPosY;
+
     const rotation = deltaX * 0.1;
-    profileCurrent.style.transform = `translateX(${deltaX}px) rotate(${rotation}deg)`;
+    profileCurrent.style.transform = `translateX(${deltaX}px) translateY(${deltaY}px) rotate(${rotation}deg)`;
   }
 });
 
