@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/me.css" />
+    <link rel="stylesheet" href="stylesheets/navbar.css" />
+  </head>
+  <body>
+    <nav class="custom-navbar">
+      <ul>
+        <li>
+          <a href="/matches"> <i class="material-icons">done</i>Метчи </a>
+        </li>
+        <li>
+          <a href="/"> <i class="material-icons">favorite</i>Главная </a>
+        </li>
+        <li>
+          <a href="/me"> <i class="material-icons">person</i>Профиль </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="custom-container">
+      <div class="profile" style="z-index: 1; position: absolute">
+        <img
+          src="profile1.jpg"
+          onerror="this.onerror=null; this.src='images/default.webp'"
+          alt="Profile Image"
+        />
+        <h2 class="name">Олег Тиньков</h2>
+        <p class="role">21 год</p>
+        <p class="stack">Rust</p>
+        <p class="telegram">@telegram</p>
+        <p class="age">18</p>
+        <p class="user_id" style="display: none"></p>
+      </div>
+    </div>
+
+    <script src="javascripts/me.js"></script>
+  </body>
+</html>

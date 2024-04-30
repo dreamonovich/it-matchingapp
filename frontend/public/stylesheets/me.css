@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.custom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

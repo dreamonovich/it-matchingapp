@@ -1,0 +1,38 @@
+.custom-navbar {
+  font-family: Arial, sans-serif !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-radius: 30px 30px 0 0;
+}
+
+.custom-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.custom-navbar ul li {
+  padding: 10px 0;
+  text-align: center;
+  flex-grow: 1;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+.custom-navbar ul li a {
+  text-decoration: none;
+  color: #333; /* Text color */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.custom-navbar ul li a .material-icons {
+  margin-bottom: 5px; /* Add some spacing between icon and text */
+}
