@@ -10,9 +10,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="stylesheets/login.css" />
+    <link rel="stylesheet" href="stylesheets/theme.css" />
   </head>
-  <body>
+  <body data-bs-theme="dark">
+    <div class="theme-switch" onclick="toggleTheme()">
+      <span class="material-symbols-outlined"> light_mode </span>
+    </div>
     <div class="custom-container">
       <form class="custom-form was-validated" novalidate>
         <div class="form-floating mb-3">
@@ -48,5 +56,6 @@
     </div>
 
     <script src="javascripts/login.js"></script>
+    <script src="javascripts/theme.js"></script>
   </body>
 </html>

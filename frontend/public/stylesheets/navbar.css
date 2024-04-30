@@ -36,3 +36,12 @@
 .custom-navbar ul li a .material-icons {
   margin-bottom: 5px; /* Add some spacing between icon and text */
 }
+
+[data-bs-theme="dark"] .custom-navbar {
+  background-color: #212529;
+  border-color: #495057;
+}
+
+[data-bs-theme="dark"] .custom-navbar ul li a {
+  color: #ffffff;
+}
