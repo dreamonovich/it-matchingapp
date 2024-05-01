@@ -1,4 +1,9 @@
 const apiPath = "http://178.154.201.200:8086";
+const authToken = localStorage.getItem("authToken");
+
+if (!authToken) {
+  window.location.href = "/login";
+}
 
 function createProfile(profile) {
   return `
@@ -15,7 +20,6 @@ function createProfile(profile) {
 }
 
 async function fetchProfiles() {
-  const authToken = localStorage.getItem("authToken");
   try {
     const response = await fetch(`${apiPath}/match/`, {
       method: "GET",

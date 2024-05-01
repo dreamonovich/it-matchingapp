@@ -1,7 +1,11 @@
 const apiPath = "http://178.154.201.200:8086";
+const authToken = localStorage.getItem("authToken");
+
+if (!authToken) {
+  window.location.href = "/login";
+}
 
 document.addEventListener("DOMContentLoaded", function () {
-  const authToken = localStorage.getItem("authToken");
   const profile = document.querySelector(".profile");
 
   fetch(`${apiPath}/profile/me/`, {

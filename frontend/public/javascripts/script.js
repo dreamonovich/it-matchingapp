@@ -1,12 +1,16 @@
 const apiPath = "http://178.154.201.200:8086";
+const authToken = localStorage.getItem("authToken");
+
+if (!authToken) {
+  window.location.href = "/login";
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const likeBtn = document.querySelector(".like");
   const dislikeBtn = document.querySelector(".dislike");
   const profile1 = document.querySelector(".profile.first");
-  const profile2 = document.querySelector(".profile.second");
 
-  const authToken = localStorage.getItem("authToken");
+  const profile2 = document.querySelector(".profile.second");
 
   let profileCurrent = profile1;
   let profileNext = profile2;
@@ -174,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error updating profile:", error);
-        window.location.href = "/register";
       });
   }
 
