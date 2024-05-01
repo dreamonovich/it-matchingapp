@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .profile {
   font-family: Arial, sans-serif !important;
   width: 300px;
@@ -6,6 +12,7 @@
   background-color: white;
   padding: 20px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .profile img {
