@@ -178,6 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error updating profile:", error);
+        const profileAlert = document.querySelector(".profile_end_alert");
+        console.log(profileAlert);
+        profileCurrent.style.visibility = "hidden";
+        profileNext.style.visibility = "hidden";
+        profileAlert.style.visibility = "visible";
       });
   }
 
