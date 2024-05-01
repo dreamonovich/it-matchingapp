@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error updating profile:", error);
-        // window.location.href = "/register";
+        window.location.href = "/register";
       });
   }
 
