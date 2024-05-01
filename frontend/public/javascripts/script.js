@@ -181,7 +181,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const profileAlert = document.querySelector(".profile_end_alert");
         console.log(profileAlert);
         profileCurrent.style.visibility = "hidden";
-        profileNext.style.visibility = "hidden";
         profileAlert.style.visibility = "visible";
       });
   }
