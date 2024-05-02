@@ -1,4 +1,4 @@
-const apiPath = "http://178.154.205.204:8086";
+const apiPath = "http://178.154.222.66:8086";
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("loginBtn").addEventListener("click", function () {

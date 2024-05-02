@@ -1,4 +1,4 @@
-const apiPath = "http://178.154.205.2048086";
+const apiPath = "http://178.154.222.66:8086";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".custom-form");
