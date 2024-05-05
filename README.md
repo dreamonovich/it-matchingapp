@@ -1,10 +1,10 @@
 # it-matchingapp
 
-## demo: http://178.154.222.66:4000/register
+## demo: http://158.160.97.151:4000/register
 check that you are using http instead of https
 
 usage:
-
+    
 1. build images
 ```bash
 docker build ./matchingapp --tag matchingapp-web
