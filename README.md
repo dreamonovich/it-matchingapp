@@ -1,8 +1,5 @@
 # it-matchingapp
 
-## demo: http://51.250.14.37:4000/register
-check that you are using http instead of https
-
 usage:
     
 1. build images
